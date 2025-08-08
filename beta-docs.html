@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberkingfisherPE 文档</title>
+    <meta http-equiv="refresh" content="1; url=https://lz.qaiu.top/d/iz/Ww6zYTSR">
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #f0f0f0;
+            background-color: #1a1a1a;
+        }
+        h1 {
+            color: #e0e0e0;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .code-block {
+            background: #2d2d2d;
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            overflow-x: auto;
+            color: #f8f8f2;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .item img {
+            max-width: 50%;
+            max-height: 300px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .item p {
+            margin-top: 10px;
+            color: white;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>前言</h1>
+    <p>感谢下载CyberkingfisherPE-1.7.5-BETA</p>
+    <p>此版本为测试版，以下为使用教程</p>
+    <div class="item">
+    <img src="4.png" alt="展示" onclick="openModal('4.png')">
+    <h1>如何将pe安装系统？</h1>
+    <p><a href="https://pecmd.net/thread-333.htm">查看安装教程</a></p>
+
+    <h1>如何调整分辨率并安装显卡、等本机驱动</h1>
+    <ol>
+        <li>虚拟机安装驱动别想了，只能更改分辨率：下载 WimTool.EXE</li>
+        <li>打开 CyberkingfisherPE-V1.0.0 的 ISO 文件</li>
+        <li>用 WimTool 解开 CyberkingfisherPE-V1.0.0/sourcs/boot.wim</li>
+        <li>在解开的文件夹中找到 pecmd.ini 文件，添加以下任意项目：然后保存wim</li>
+    </ol>
+    <div class="code-block">
+        PECMD.EXE DISP W1920 H1080 B32
+    </div>
+    <p>或</p>
+    <div class="code-block">
+        TEAM DISP W1024 H768 B32|DISP W1152 H864 B32|DISP W1280 H720 B32
+    </div>
+    <p>实体机：运行开始菜单中驱动程序中的所有驱动可自适应本机分辨率并显卡直通，下载链接显而易见</p>
+
+    <h1>Windows11原生开始菜单使用</h1>
+    <div class="item">
+    <img src="5.png" alt="开始菜单展示" onclick="openModal('5.png')">
+    </div>
+    <p>首先打开X:\Program Files\StartAllBack\StartAllBackCfg.exe，选择“开始”菜单点击，取消选择经典开始菜单，再点击X:\InstallApp\startdock-start11-install.exe安装，安装完成后点击桌面上的start11，第一次打开会报错，再打开一次就没事了，然后选择Windows11样式即可</p>
+
+    <h1>使用暗色主题</h1>
+    <p>X:\InstallApp\的txt文件有教程</p>
+</body>
+</html>
