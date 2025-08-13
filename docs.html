@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberkingfisherPE 文档</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #f0f0f0; /* 浅色文字 */
+            background-color: #1a1a1a; /* 深色背景 */
+        }
+        h1 {
+            color: #e0e0e0; /* 标题浅色 */
+            border-bottom: 2px solid #333; /* 深色边框 */
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        a {
+            color: #4da6ff; /* 链接亮色 */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .code-block {
+            background: #2d2d2d; /* 代码块深色背景 */
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: monospace;
+            overflow-x: auto;
+            color: #f8f8f2; /* 代码文字色 */
+        }
+    </style>
+</head>
+<body>
+    <h1>前言</h1>
+    <p>😊由于开发者时间有限，📖本页面设计较为简洁。🔢若字体过小，🔍可放大页面阅读。</p>
+    <p>CyberkingfisherPE 是非盈利💴性质的免费软件，使用问题❔可参考以下教程。</p>
+    <h1>如何将pe安装系统？</h1>
+    <p><a href="https://pecmd.net/thread-333.htm">查看安装教程</a></p>
+
+    <h1>程序使用</h1>
+    <p>内所有文件都要以管理员省份运行</p>
+
+    <h1>如何调整分辨率</h1>
+    <ol>
+        <li>下载 WimTool.EXE</li>
+        <li>打开 CyberkingfisherPE-V1.0.0 的 ISO 文件</li>
+        <li>用 WimTool 解开 CyberkingfisherPE-V1.0.0/sourcs/boot.wim</li>
+        <li>在解开的文件夹中找到 pecmd.ini 文件，添加以下任意项目：</li>
+    </ol>
+    <div class="code-block">
+        PECMD.EXE DISP W1920 H1080 B32
+    </div>
+    <p>或</p>
+    <div class="code-block">
+        TEAM DISP W1024 H768 B32|DISP W1152 H864 B32|DISP W1280 H720 B32
+    </div>
+    <p>小小的提示：在1.7.5版有驱动可自适应本机分辨率并显卡直通</p>
+
+    <h1>startdock-start11使用</h1>
+    <p>C/Windows有安装app，第一次打开会失败，第二次不会</p>
+
+    <h1>输入法使用</h1>
+    <p>若输入法未运行，点击开始菜单中的输入法即可。</p>
+
+    <h1>Edge 使用</h1>
+    <p>Edge 位于开始菜单中，首次打开可能较慢。</p>
+</body>
+</html>
